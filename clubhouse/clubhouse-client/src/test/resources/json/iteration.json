@@ -1,0 +1,31 @@
+{
+    "app_url": "https:\/\/app.clubhouse.io\/consilience-ventures\/iteration\/2279",
+    "description": "",
+    "entity_type": "iteration",
+    "labels": [],
+    "mention_ids": [],
+    "member_mention_ids": [],
+    "name": "Iteration 1",
+    "updated_at": "2021-05-17T13:39:39Z",
+    "group_mention_ids": [],
+    "end_date": "2021-06-09",
+    "follower_ids": [],
+    "group_ids": [],
+    "start_date": "2021-05-19",
+    "status": "started",
+    "id": 2279,
+    "stats": {
+        "num_points_done": 75,
+        "num_related_documents": 0,
+        "average_cycle_time": 322557,
+        "num_stories_unstarted": 3,
+        "num_points_started": 18,
+        "num_points_unstarted": 4,
+        "num_stories_started": 8,
+        "num_stories_unestimated": 5,
+        "average_lead_time": 1589898,
+        "num_points": 97,
+        "num_stories_done": 30
+    },
+    "created_at": "2021-05-11T11:41:57Z"
+}

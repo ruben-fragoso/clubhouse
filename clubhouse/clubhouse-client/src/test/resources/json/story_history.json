@@ -1,0 +1,338 @@
+[
+    {
+        "id": "60b0c36f-c1a6-492d-b304-aa17b6c08838",
+        "changed_at": "2021-05-28T10:18:23.838Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "600558e8-ac7f-49b5-b809-e65c98e23431",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "create",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "description": "We're building contexts in quite a few places and we need to make sure we include the session, role etc so we should look to create a factory to formalise it.\n\nFor example, we should be able to call:\n\n`create(:context, :standard, attrs)`\n\nWhere `attrs` contains a `role`, `user` and `session`.",
+                "task_ids": [
+                    2685,
+                    2686
+                ],
+                "story_type": "chore",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "requested_by_id": "600558e8-ac7f-49b5-b809-e65c98e23431",
+                "workflow_state_id": 500000008,
+                "follower_ids": [
+                    "600558e8-ac7f-49b5-b809-e65c98e23431"
+                ],
+                "estimate": 1,
+                "project_id": 14
+            },
+            {
+                "id": 2685,
+                "entity_type": "story-task",
+                "action": "create",
+                "description": "Create Context factory",
+                "complete": false
+            },
+            {
+                "id": 2686,
+                "entity_type": "story-task",
+                "action": "create",
+                "description": "Refactor tests to use Context factory",
+                "complete": false
+            }
+        ],
+        "references": [
+            {
+                "id": 14,
+                "entity_type": "project",
+                "name": "Backend",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/project/14"
+            },
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "60b0c37d-cfcb-46b5-ba31-e188d1555994",
+        "changed_at": "2021-05-28T10:18:37.983Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "600558e8-ac7f-49b5-b809-e65c98e23431",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "description": {
+                        "new": "We're building contexts in quite a few places and we need to make sure we include the session, role etc so we should look to create a factory to formalise it.\n\nFor example, we should be able to call:\n\n```\ncreate(:context, :standard, attrs)\n```\n\nWhere `attrs` contains a `role`, `user` and `session`.",
+                        "old": "We're building contexts in quite a few places and we need to make sure we include the session, role etc so we should look to create a factory to formalise it.\n\nFor example, we should be able to call:\n\n`create(:context, :standard, attrs)`\n\nWhere `attrs` contains a `role`, `user` and `session`."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60b0c523-251b-42f3-a552-d10f2a32c9ed",
+        "changed_at": "2021-05-28T10:25:39.163Z",
+        "version": "v1",
+        "primary_id": 2689,
+        "member_id": "5e31ec74-ec3a-4f48-88e1-cbe027e0110c",
+        "actions": [
+            {
+                "id": 2689,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "[@rubenfragoso](clubhouse://members/60893c36-4f60-4310-9ad3-1e766f93719e) the need for this story was validated prior to [@jamesduncombe](clubhouse://members/600558e8-ac7f-49b5-b809-e65c98e23431) creating it.",
+                "author_id": "5e31ec74-ec3a-4f48-88e1-cbe027e0110c",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684/housekeeping-create-a-context-factory-and-refactor-tests-to-use-it#activity-2689"
+            },
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "5e31ec74-ec3a-4f48-88e1-cbe027e0110c"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60b0d047-dfd3-4d25-81c6-ef50a862d0ea",
+        "changed_at": "2021-05-28T11:13:11.905Z",
+        "version": "v1",
+        "primary_id": 2694,
+        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "actions": [
+            {
+                "id": 2694,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "ACK",
+                "author_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684/housekeeping-create-a-context-factory-and-refactor-tests-to-use-it#activity-2694"
+            },
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "60893c36-4f60-4310-9ad3-1e766f93719e"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60b0f0c1-dcf6-4fb9-87f7-b094bcd9de9b",
+        "changed_at": "2021-05-28T13:31:45.920Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2567
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            }
+        ]
+    },
+    {
+        "id": "60b0f0ca-62bd-4ade-879b-412568cec239",
+        "changed_at": "2021-05-28T13:31:54.830Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "label_ids": {
+                        "adds": [
+                            2198
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2198,
+                "entity_type": "label",
+                "name": "groomed",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/2198"
+            }
+        ]
+    },
+    {
+        "id": "60b0f0cc-30f9-4451-8dd4-be2b60b0ea03",
+        "changed_at": "2021-05-28T13:31:56.890Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2279,
+                        "old": 2567
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2279,
+                "entity_type": "iteration",
+                "name": "Iteration 1",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+            },
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            }
+        ]
+    },
+    {
+        "id": "60b0f0d0-35c9-4d45-8d9f-82adf49d84f3",
+        "changed_at": "2021-05-28T13:32:00.121Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000007,
+                        "old": 500000008
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            },
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "60b0f33f-2d3b-4e68-90f5-a0def05863b8",
+        "changed_at": "2021-05-28T13:42:23.198Z",
+        "version": "v1",
+        "primary_id": 2684,
+        "member_id": "600558e8-ac7f-49b5-b809-e65c98e23431",
+        "actions": [
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "owner_ids": {
+                        "adds": [
+                            "600558e8-ac7f-49b5-b809-e65c98e23431"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ba25ef-c151-4ddf-8a1a-622aa29450f1",
+        "changed_at": "2021-06-04T13:09:03.860Z",
+        "version": "v1",
+        "primary_id": 2807,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2807,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "@dianna to check priority ",
+                "author_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684/housekeeping-create-a-context-factory-and-refactor-tests-to-use-it#activity-2807"
+            },
+            {
+                "id": 2684,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Housekeeping: Create a Context factory and refactor tests to use it.",
+                "story_type": "chore",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2684",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]
