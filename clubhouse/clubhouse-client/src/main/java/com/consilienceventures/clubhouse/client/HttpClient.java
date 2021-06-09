@@ -14,25 +14,56 @@ import com.google.api.client.http.javanet.NetHttpTransport;
 import java.io.IOException;
 import java.text.ParseException;
 import net.minidev.json.JSONArray;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HttpClient {
 
-    public static void main(String[] args) throws IOException, ParseException {
+   private static final Logger LOGGER = LoggerFactory.getLogger(HttpClient.class);
 
-        
-        GenericUrl url = new GenericUrl("https://api.clubhouse.io/api/v3/stories/search");
+    private String baseURL;
+    private String token;
+
+    public void setBaseURL(String baseURL) {
+        this.baseURL = baseURL;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getBaseURL() {
+        return baseURL;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    /**
+     *
+     * @param method True for Post, False for Get
+     * @param id
+     * @param body
+     * @return
+     */
+    public String getData(Boolean method, String finalURL, String body) throws IOException {
+        String returnValue = new String();
+        GenericUrl url = new GenericUrl(getBaseURL() + finalURL);
+        HttpRequest request;
+        LOGGER.info(url.toString());
         HttpRequestFactory requestFactory
                 = new NetHttpTransport().createRequestFactory();
-            String requestBody =  "{\"project_id\": 2006}";
-        HttpRequest request = requestFactory.buildPostRequest(url, ByteArrayContent.fromString("application/json", requestBody));
-        request.getHeaders().setContentType("application/json");
-        request.getHeaders().set("Clubhouse-Token", "608a81c5-e460-4b39-a6b0-d65ca054a6d5");    
-        String rawResponse = request.execute().parseAsString();
-        System.out.print(rawResponse);
-        DocumentContext jsonContext = JsonPath.parse(rawResponse);
-         JSONArray releasestest = jsonContext.read("$[*]");
-        
-        
+        if (method == Boolean.TRUE) {
+            request = requestFactory.buildPostRequest(url, ByteArrayContent.fromString(ClubHouseStatics.BODY_TYPE, body));
+        } else {
+            request = requestFactory.buildGetRequest(url);
+        }
+        request.getHeaders().setContentType(ClubHouseStatics.BODY_TYPE);
+        request.getHeaders().set(ClubHouseStatics.TOKEN_HEADER, getToken());//"608a81c5-e460-4b39-a6b0-d65ca054a6d5");
+        returnValue = request.execute().parseAsString();
+        LOGGER.debug(returnValue);
+        return returnValue;
     }
 
 }

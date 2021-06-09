@@ -13,20 +13,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.type.PostgresUUIDType;
-
 
 /**
  *
  * @author ruben
  */
 @Entity
-@Table (name = "iterations")
+@Table(name = "iterations")
 public class Iteration {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private PostgresUUIDType id;
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "id", updatable = false, nullable = false)
+    private UUID id;
     @Column(name = "iterationsId")
     private Integer iterationId;
     @Column(name = "name")
@@ -40,7 +44,6 @@ public class Iteration {
         return endDate;
     }
 
-   
     public Integer getIterationId() {
         return iterationId;
     }
@@ -77,19 +80,23 @@ public class Iteration {
         this.startDate = startDate;
     }
 
-    public void setId(PostgresUUIDType id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
-    public PostgresUUIDType getId() {
+    public Timestamp getEndDate() {
+        return endDate;
+    }
+
+    public Timestamp getStartDate() {
+        return startDate;
+    }
+
+    public Iteration() {
+    }
+
+    public UUID getId() {
         return id;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
 }

@@ -52,7 +52,6 @@ public class ClubHouseJSONParser {
             iteration.setName((String) getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.NAME_ENTITY));
             iteration.setStart(new Timestamp(getDateFromString((String)getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.START_DATE)).getTime()));
             iteration.setEnd(new Timestamp(getDateFromString((String)getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.END_DATE)).getTime()));
-            
             returnValue.put(UUID.randomUUID(), iteration);
         }
         return returnValue;
@@ -67,8 +66,7 @@ public class ClubHouseJSONParser {
             //Object object = ;
             aProject.setProjectId((Integer) getValueFromLinkedHashMap(projects.get(index), ClubHouseStatics.ID_ENTITY));
             aProject.setName((String)getValueFromLinkedHashMap(projects.get(index), ClubHouseStatics.NAME_ENTITY) );
-            aProject.setId(UUID.randomUUID());
-            returnValue.put(aProject.getId(), aProject);
+            returnValue.put(UUID.randomUUID(), aProject);
             
         }
         return returnValue;
