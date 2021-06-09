@@ -8,6 +8,7 @@
     <modules>
         <module>clubhouse-model</module>
         <module>clubhouse-client</module>
+        <module>clubhouse-database</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

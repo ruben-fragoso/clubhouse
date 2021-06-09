@@ -104,5 +104,10 @@
             <artifactId>byte-buddy</artifactId>
             <version>1.10.22</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>clubhouse-database</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 </project>

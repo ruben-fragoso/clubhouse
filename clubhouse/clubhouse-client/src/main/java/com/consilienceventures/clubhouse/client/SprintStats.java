@@ -5,20 +5,29 @@
  */
 package com.consilienceventures.clubhouse.client;
 
+import com.consilienceventures.clubhouse.database.implementations.ProjectDAOImpl;
+import com.consilienceventures.clubhouse.model.Project;
 
 /**
  *
  * @author ruben
  */
 public class SprintStats {
-
-   
-
+    
     public static void main(String[] args) {
-
-      SprintStatsUtil sprintStatsUtil = new SprintStatsUtil();
-      sprintStatsUtil.startPersistence();
-
+        
+        SprintStatsUtil sprintStatsUtil = new SprintStatsUtil();
+        sprintStatsUtil.startPersistence();
+        ProjectDAOImpl projectDAOImpl = new ProjectDAOImpl();
+        projectDAOImpl.setEntityManager(sprintStatsUtil.getEm());
+        projectDAOImpl.getEntityManager().getTransaction().begin();
+        Project aproject = new Project();
+        aproject.setName("dd");
+        aproject.setProjectId(Integer.SIZE);
+        projectDAOImpl.persist(aproject);
+        
+        projectDAOImpl.getEntityManager().getTransaction().commit();
+        
     }
-
+    
 }

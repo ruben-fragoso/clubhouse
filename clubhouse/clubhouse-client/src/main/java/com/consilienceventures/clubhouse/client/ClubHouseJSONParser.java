@@ -26,9 +26,9 @@ import org.slf4j.LoggerFactory;
  *
  * @author ruben
  */
-public class ClubHouseJSONParse {
+public class ClubHouseJSONParser {
     
-        private static final Logger LOGGER = LoggerFactory.getLogger(ClubhouseJSONParser.class);
+        private static final Logger LOGGER = LoggerFactory.getLogger(ClubHouseJSONParser.class);
     
     private Object getValueFromLinkedHashMap(Object linked, String key) {
         LinkedHashMap<String, Object> myList = (LinkedHashMap<String, Object>) linked;
@@ -52,8 +52,8 @@ public class ClubHouseJSONParse {
             iteration.setName((String) getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.NAME_ENTITY));
             iteration.setStart(new Timestamp(getDateFromString((String)getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.START_DATE)).getTime()));
             iteration.setEnd(new Timestamp(getDateFromString((String)getValueFromLinkedHashMap(iterations.get(index), ClubHouseStatics.END_DATE)).getTime()));
-            iteration.setId((new PostgresUUIDType().));
-            returnValue.put(iteration.getId(), iteration);
+            
+            returnValue.put(UUID.randomUUID(), iteration);
         }
         return returnValue;
     }

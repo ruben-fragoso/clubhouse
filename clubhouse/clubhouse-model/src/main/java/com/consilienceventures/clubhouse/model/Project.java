@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.type.PostgresUUIDType;
 
 /**
@@ -19,27 +20,27 @@ import org.hibernate.type.PostgresUUIDType;
  * @author ruben
  */
 @Entity
-@Table (name = "projects")
+@Table(name = "projects")
 public class Project {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    
-    @Column(name="id")
-    private PostgresUUIDType id;
-    
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "id", updatable = false, nullable = false)
+    private UUID id;
+
     @Column(name = "project_id")
     private Integer projectId;
     @Column(name = "name")
     private String name;
 
-    public void setId(PostgresUUIDType id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
     
-   
-
     public void setName(String name) {
         this.name = name;
     }
@@ -48,15 +49,15 @@ public class Project {
         this.projectId = projectId;
     }
 
+    public UUID getId() {
+        return id;
+    }
+    
+    
+
     public Project() {
     }
 
-    public PostgresUUIDType getId() {
-        return id;
-    }
-
-    
-    
     public String getName() {
         return name;
     }
@@ -65,9 +66,4 @@ public class Project {
         return projectId;
     }
 
-    
-    
-
-  
-    
 }
