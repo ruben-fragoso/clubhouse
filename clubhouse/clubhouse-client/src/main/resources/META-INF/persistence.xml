@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-    <persistence-unit name="clubhouse" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <class>com.consilienceventures.clubhouse.model.Project</class>
-        <class>com.consilienceventures.clubhouse.model.Iteration</class>
-        <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/clubhouse"/>
-            <property name="javax.persistence.jdbc.user" value="clubhouse"/>
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.password" value="c0ns1l13ntv3ntur35"/>
-            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
-            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
-        </properties>
-    </persistence-unit>
+  <persistence-unit name="clubhouse" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.consilienceventures.clubhouse.model.Project</class>
+    <class>com.consilienceventures.clubhouse.model.Iteration</class>
+    <class>com.consilienceventures.clubhouse.model.Story</class>
+    <class>com.consilienceventures.clubhouse.model.Change</class>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/clubhouse"/>
+      <property name="javax.persistence.jdbc.user" value="clubhouse"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="c0ns1l13ntv3ntur35"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
 </persistence>

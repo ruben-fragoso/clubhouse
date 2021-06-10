@@ -17,9 +17,9 @@ import org.slf4j.LoggerFactory;
  *
  * @author ruben
  */
-public class SprintStatsUtil {
+public class EntityManagerUtil {
     
-    private static final Logger LOGGER = LoggerFactory.getLogger(SprintStatsUtil.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EntityManagerUtil.class);
 
     @PersistenceUnit
     private EntityManagerFactory emf;

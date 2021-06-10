@@ -1,0 +1,152 @@
+{
+    "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+    "description": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details.\n\n> Note: It's likely that the label is correct in most places already - this card is about making it consistent across the three areas in the bullet point.",
+    "archived": false,
+    "started": true,
+    "story_links": [],
+    "entity_type": "story",
+    "labels": [
+        {
+            "app_url": "https://app.clubhouse.io/consilience-ventures/label/2198",
+            "description": "",
+            "archived": false,
+            "entity_type": "label",
+            "color": "#fdeba5",
+            "name": "groomed",
+            "updated_at": "2021-05-07T12:31:30Z",
+            "external_id": null,
+            "id": 2198,
+            "created_at": "2021-05-07T12:31:30Z"
+        }
+    ],
+    "mention_ids": [],
+    "member_mention_ids": [],
+    "story_type": "feature",
+    "linked_files": [],
+    "workflow_id": 500000005,
+    "completed_at_override": null,
+    "started_at": "2021-05-18T18:21:50Z",
+    "completed_at": "2021-05-20T19:20:15Z",
+    "name": "Confirmed Bid State Label",
+    "completed": true,
+    "comments": [
+        {
+            "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2534",
+            "entity_type": "story-comment",
+            "story_id": 1855,
+            "mention_ids": [
+                "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+            ],
+            "author_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+            "member_mention_ids": [
+                "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+            ],
+            "updated_at": "2021-05-18T18:49:02Z",
+            "group_mention_ids": [],
+            "external_id": null,
+            "id": 2534,
+            "position": 1,
+            "reactions": [],
+            "created_at": "2021-05-18T18:49:02Z",
+            "text": "[@diannachen](clubhouse://members/5e4fc91e-b963-4f9d-93db-5097fcb5b7a2) the previous label on this place `Bid cards in My Dashboard from the expert's POV` had a popup when you hovered it. What should go in there now? (screenshot below with the new spec for the label plus the old popup message)\n\n![Clipboard 2021-18-05 at 7.46.54 PM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60a40b9f-0896-4b2d-9d02-ae7ee75b0cf3/Clipboard%202021-18-05%20at%207.46.54%20PM.png)"
+        },
+        {
+            "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2535",
+            "entity_type": "story-comment",
+            "story_id": 1855,
+            "mention_ids": [],
+            "author_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+            "member_mention_ids": [],
+            "updated_at": "2021-05-18T20:02:03Z",
+            "group_mention_ids": [],
+            "external_id": null,
+            "id": 2535,
+            "position": 2,
+            "reactions": [
+                {
+                    "emoji": ":white_check_mark:",
+                    "permission_ids": [
+                        "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+                    ]
+                }
+            ],
+            "created_at": "2021-05-18T20:02:03Z",
+            "text": "Updated the estimated to a \"3\" because turns out the previous \"labels\" weren't actually labels but svg images. The label had to be done from scratch. "
+        },
+        {
+            "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2538",
+            "entity_type": "story-comment",
+            "story_id": 1855,
+            "mention_ids": [
+                "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+            ],
+            "author_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+            "member_mention_ids": [
+                "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+            ],
+            "updated_at": "2021-05-20T08:46:27Z",
+            "group_mention_ids": [],
+            "external_id": null,
+            "id": 2538,
+            "position": 3,
+            "reactions": [],
+            "created_at": "2021-05-20T08:43:36Z",
+            "text": "[@andrefreire](clubhouse://members/5e31faf7-7d79-4a50-a3d1-56bcc4da467c) once the handshake is complete, the tooltip for Confirmed should read: You have accepted the offer to work on this ticket. "
+        },
+        {
+            "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2540",
+            "entity_type": "story-comment",
+            "story_id": 1855,
+            "mention_ids": [],
+            "author_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+            "member_mention_ids": [],
+            "updated_at": "2021-05-20T08:49:41Z",
+            "group_mention_ids": [],
+            "external_id": null,
+            "id": 2540,
+            "position": 4,
+            "reactions": [],
+            "created_at": "2021-05-20T08:49:41Z",
+            "text": "See the related card, once part 2 is released we'll adjust the tooltip"
+        }
+    ],
+    "blocker": false,
+    "branches": [],
+    "epic_id": 464,
+    "external_links": [],
+    "previous_iteration_ids": [
+        2279
+    ],
+    "requested_by_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+    "iteration_id": 2567,
+    "tasks": [],
+    "started_at_override": null,
+    "group_id": null,
+    "workflow_state_id": 500001592,
+    "updated_at": "2021-06-08T10:22:29Z",
+    "pull_requests": [],
+    "group_mention_ids": [],
+    "follower_ids": [
+        "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+    ],
+    "owner_ids": [
+        "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+    ],
+    "external_id": null,
+    "id": 1855,
+    "lead_time": 2428669,
+    "estimate": 1,
+    "commits": [],
+    "files": [],
+    "position": 62135972340,
+    "blocked": false,
+    "project_id": 15,
+    "deadline": null,
+    "stats": {
+        "num_related_documents": 0
+    },
+    "cycle_time": 176304,
+    "created_at": "2021-04-22T16:42:25Z",
+    "moved_at": "2021-05-20T19:20:15Z"
+}

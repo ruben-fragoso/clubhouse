@@ -15,7 +15,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
-
 /**
  *
  * @author ruben
@@ -24,7 +23,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name = "changes")
 
 public class Change {
-    
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
@@ -32,10 +31,16 @@ public class Change {
             strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
+    @Column(name = "storyid")
     private Integer storyId;
-    private Timestamp snapshot;
+    @Column(name = "created")
+    private Timestamp created;
+    @Column(name = "oldvalue")
     private String oldValue;
+    @Column(name = "newvalue")
     private String newValue;
+    @Column(name = "changetype")
+    private String changeType;
 
     public void setId(UUID id) {
         this.id = id;
@@ -53,10 +58,6 @@ public class Change {
         this.storyId = storyId;
     }
 
-    public void setSnapshot(Timestamp snapshot) {
-        this.snapshot = snapshot;
-    }
-
     public UUID getId() {
         return id;
     }
@@ -69,19 +70,24 @@ public class Change {
         return oldValue;
     }
 
-    public Timestamp getSnapshot() {
-        return snapshot;
+    public void setChangeType(String changeType) {
+        this.changeType = changeType;
+    }
+
+    public void setCreated(Timestamp created) {
+        this.created = created;
+    }
+
+    public String getChangeType() {
+        return changeType;
+    }
+
+    public Timestamp getCreated() {
+        return created;
     }
 
     public Integer getStoryId() {
         return storyId;
     }
-       
-    
-    
-    
-    
-    
-            
-    
+
 }

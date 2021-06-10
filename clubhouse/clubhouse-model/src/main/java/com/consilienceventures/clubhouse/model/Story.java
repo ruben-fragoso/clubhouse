@@ -42,6 +42,45 @@ public class Story {
     private String name;
     @Column (name="created")
     private Timestamp created;
+    @Column (name="type")
+    private String type;
+    @Column (name ="projectid")
+    private Integer projectId;
+    @Column (name="estimate")
+    private Integer estimate;
+
+    public void setEstimate(Integer estimate) {
+        this.estimate = estimate;
+    }
+
+    public Integer getEstimate() {
+        return estimate;
+    }
+    
+    
+    
+
+    public void setProjectId(Integer projectId) {
+        this.projectId = projectId;
+    }
+
+    public Integer getProjectId() {
+        return projectId;
+    }
+    
+    
+    
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+    
+    
+    
 
     public Timestamp getCreated() {
         return created;

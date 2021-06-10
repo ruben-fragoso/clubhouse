@@ -1,0 +1,764 @@
+[
+    {
+        "id": "6081a771-c32a-4128-92d8-74094bca8534",
+        "changed_at": "2021-04-22T16:42:25.941Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "create",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "workflow_state_id": 500000008,
+                "description": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details",
+                "follower_ids": [
+                    "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+                ],
+                "requested_by_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+                "project_id": 15
+            }
+        ],
+        "references": [
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            },
+            {
+                "id": 15,
+                "entity_type": "project",
+                "name": "Frontend",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/project/15"
+            }
+        ]
+    },
+    {
+        "id": "6081b0b5-6c00-48a8-ac8b-fd154983104d",
+        "changed_at": "2021-04-22T17:21:57.794Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "label_ids": {
+                        "adds": [
+                            1864
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1864,
+                "entity_type": "label",
+                "name": "Release 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1864"
+            }
+        ]
+    },
+    {
+        "id": "608bf82b-fdeb-48d7-916d-22e186f63019",
+        "changed_at": "2021-04-30T12:29:31.831Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31ec74-ec3a-4f48-88e1-cbe027e0110c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "description": {
+                        "new": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details.\n\n> Note: It's likely that the label is correct in most places already - this card is about making it consistent across the three areas in the bullet point.",
+                        "old": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "609106b2-5421-4cee-b436-d2c2663a9c34",
+        "changed_at": "2021-05-04T08:32:50.637Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000007,
+                        "old": 500000008
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            },
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "60925fdc-3504-4d10-be8a-a46ea6d85d46",
+        "changed_at": "2021-05-05T09:05:32.075Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000008,
+                        "old": 500000007
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            },
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "60953426-bb0a-4462-9c07-2207945e05d0",
+        "changed_at": "2021-05-07T12:35:50.515Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "label_ids": {
+                        "adds": [
+                            2198
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2198,
+                "entity_type": "label",
+                "name": "groomed",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/2198"
+            }
+        ]
+    },
+    {
+        "id": "609a493d-3288-44a3-acec-d01e68af7d12",
+        "changed_at": "2021-05-11T09:07:09.720Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000007,
+                        "old": 500000008
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            },
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "609e8710-f043-4ef5-9eff-4ad4582cbe03",
+        "changed_at": "2021-05-14T14:20:01.090Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2279
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2279,
+                "entity_type": "iteration",
+                "name": "Iteration 1",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+            }
+        ]
+    },
+    {
+        "id": "60a3c749-e10e-48d4-8286-c055cbd8e31d",
+        "changed_at": "2021-05-18T13:55:21.399Z",
+        "version": "v1",
+        "primary_id": 500001779,
+        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "actions": [
+            {
+                "id": 500001779,
+                "entity_type": "story-link",
+                "action": "create",
+                "subject_id": 1855,
+                "verb": "relates to",
+                "object_id": 1856
+            },
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "subject_story_link_ids": {
+                        "adds": [
+                            500001779
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1856,
+                "entity_type": "story",
+                "name": "Confirmed Bid State",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1856"
+            }
+        ]
+    },
+    {
+        "id": "60a3c7ac-2888-47bd-b811-e57e7b8c1fcc",
+        "changed_at": "2021-05-18T13:57:00.102Z",
+        "version": "v1",
+        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "subject_story_link_ids": {
+                        "removes": [
+                            500001779
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001779,
+                "entity_type": "story-link",
+                "action": "delete",
+                "verb": "relates to",
+                "subject_id": 1855,
+                "object_id": 1856
+            }
+        ]
+    },
+    {
+        "id": "60a3c7f6-b016-4396-bf45-51941f914ab9",
+        "changed_at": "2021-05-18T13:58:14.879Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "estimate": {
+                        "new": 1
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60a405be-a2b4-4893-a173-7083045ee2ff",
+        "changed_at": "2021-05-18T18:21:50.721Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "started": {
+                        "new": true,
+                        "old": false
+                    },
+                    "workflow_state_id": {
+                        "new": 500000006,
+                        "old": 500000007
+                    },
+                    "owner_ids": {
+                        "adds": [
+                            "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
+            },
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "60a40c1e-1d3b-4a67-8b14-7df751859fca",
+        "changed_at": "2021-05-18T18:49:02.714Z",
+        "version": "v1",
+        "primary_id": 2534,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 2534,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "[@diannachen](clubhouse://members/5e4fc91e-b963-4f9d-93db-5097fcb5b7a2) the previous label on this place `Bid cards in My Dashboard from the expert's POV` had a popup when you hovered it. What should go in there now? (screenshot below with the new spec for the label plus the old popup message)\n\n![Clipboard 2021-18-05 at 7.46.54 PM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60a40b9f-0896-4b2d-9d02-ae7ee75b0cf3/Clipboard%202021-18-05%20at%207.46.54%20PM.png)",
+                "author_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2534"
+            },
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60a41cbe-885d-4f35-935e-ed6cecac91c6",
+        "changed_at": "2021-05-18T19:59:58.808Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500001485,
+                        "old": 500000006
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500001485,
+                "entity_type": "workflow-state",
+                "name": "In Technical Review",
+                "type": "started"
+            },
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
+            }
+        ]
+    },
+    {
+        "id": "60a41cdb-cf7b-4106-bbad-57b41df72237",
+        "changed_at": "2021-05-18T20:00:27.822Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "estimate": {
+                        "new": 3,
+                        "old": 1
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60a62249-9290-4326-9dc1-857fc1319f6d",
+        "changed_at": "2021-05-20T08:48:09.120Z",
+        "version": "v1",
+        "primary_id": 2539,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2539,
+                "entity_type": "story",
+                "action": "create",
+                "name": "Confirmed Bid State Tooltip",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2539"
+            },
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "object_story_link_ids": {
+                        "adds": [
+                            500001781
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001781,
+                "entity_type": "story-link",
+                "action": "create",
+                "subject_id": 2539,
+                "verb": "relates to",
+                "object_id": 1855
+            }
+        ]
+    },
+    {
+        "id": "60a675c0-ee1d-4d74-9fdb-e2023653330c",
+        "changed_at": "2021-05-20T14:44:16.841Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "estimate": {
+                        "new": 1,
+                        "old": 3
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60a6b66f-bd44-40d2-b397-22a57f4b730a",
+        "changed_at": "2021-05-20T19:20:15.117Z",
+        "version": "v1",
+        "primary_id": 1855,
+        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "completed": {
+                        "new": true,
+                        "old": false
+                    },
+                    "workflow_state_id": {
+                        "new": 500001592,
+                        "old": 500001485
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500001592,
+                "entity_type": "workflow-state",
+                "name": "Ready for Product Review",
+                "type": "done"
+            },
+            {
+                "id": 500001485,
+                "entity_type": "workflow-state",
+                "name": "In Technical Review",
+                "type": "started"
+            }
+        ]
+    },
+    {
+        "id": "60afc642-2c44-4ad3-983c-9322fe38c675",
+        "changed_at": "2021-05-27T16:18:10.953Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "object_story_link_ids": {
+                        "removes": [
+                            500001781
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001781,
+                "entity_type": "story-link",
+                "action": "delete",
+                "verb": "relates to",
+                "subject_id": null,
+                "object_id": 1855
+            }
+        ]
+    },
+    {
+        "id": "60b11bea-654f-4234-8e18-c3bbd993949d",
+        "changed_at": "2021-05-28T16:35:54.262Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "label_ids": {
+                        "removes": [
+                            1864
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1864,
+                "entity_type": "label",
+                "name": "Release 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1864"
+            }
+        ]
+    },
+    {
+        "id": "60b5e739-5a59-452a-8c32-d6f64ae531ae",
+        "changed_at": "2021-06-01T07:52:25.565Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "epic_id": {
+                        "new": 646
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 646,
+                "entity_type": "epic",
+                "name": "Member - My Dashboard",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/646"
+            }
+        ]
+    },
+    {
+        "id": "60b5e7d7-2fef-4701-b950-c0c80f118ba4",
+        "changed_at": "2021-06-01T07:55:03.058Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "epic_id": {
+                        "new": 464,
+                        "old": 646
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 464,
+                "entity_type": "epic",
+                "name": "Manage ticket lifecycle",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/464"
+            },
+            {
+                "id": 646,
+                "entity_type": "epic",
+                "name": "Member - My Dashboard",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/646"
+            }
+        ]
+    },
+    {
+        "id": "60bf44e5-286d-4989-a2f6-e83765cf9b58",
+        "changed_at": "2021-06-08T10:22:29.891Z",
+        "version": "v1",
+        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "actions": [
+            {
+                "id": 1855,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Confirmed Bid State Label",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2567,
+                        "old": 2279
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            },
+            {
+                "id": 2279,
+                "entity_type": "iteration",
+                "name": "Iteration 1",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+            }
+        ]
+    }
+]
