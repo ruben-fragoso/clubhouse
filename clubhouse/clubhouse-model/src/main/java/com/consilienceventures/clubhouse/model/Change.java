@@ -15,6 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
+
 /**
  *
  * @author ruben
@@ -23,7 +24,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name = "changes")
 
 public class Change {
-
+    
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
@@ -31,15 +32,15 @@ public class Change {
             strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
-    @Column(name = "storyid")
+    @Column(name="storyid")
     private Integer storyId;
-    @Column(name = "created")
+    @Column(name="created")
     private Timestamp created;
-    @Column(name = "oldvalue")
+    @Column(name="oldvalue")
     private String oldValue;
-    @Column(name = "newvalue")
+    @Column(name="newvalue")
     private String newValue;
-    @Column(name = "changetype")
+    @Column(name="changetype")
     private String changeType;
 
     public void setId(UUID id) {
@@ -57,6 +58,8 @@ public class Change {
     public void setStoryId(Integer storyId) {
         this.storyId = storyId;
     }
+
+   
 
     public UUID getId() {
         return id;
@@ -86,8 +89,17 @@ public class Change {
         return created;
     }
 
+   
+
     public Integer getStoryId() {
         return storyId;
     }
-
+       
+    
+    
+    
+    
+    
+            
+    
 }

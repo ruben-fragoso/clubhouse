@@ -106,6 +106,19 @@ public class ClubHouseJSONParser {
         return returnValue;
     }
 
+//    public Change getReferences(JSONArray anArray, Change aChange){
+//        Change returnValue = aChange;
+//        Map<String, Integer> stateChanges = new HashMap<String, Integer>();
+//        for (int indey = 0; indey < anArray.size() indey++) {
+//                if (stateChanges.get(ClubHouseStatics.NEW_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
+//                    aChange.setNewValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
+//                }
+//                if (stateChanges.get(ClubHouseStatics.OLD_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
+//                    aChange.setOldValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
+//                }
+//            }
+//        return returnValue;
+//    }
     public HashMap<UUID, Change> getChanges(String json) throws ParseException {
         HashMap<UUID, Change> returnValue = new HashMap<>();
         DocumentContext jsonContext = JsonPath.parse(json);
@@ -118,21 +131,51 @@ public class ClubHouseJSONParser {
             Integer newValue = null;
             Integer oldValue = null;
             aChange.setCreated(new Timestamp(getDateFromString((String) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.CHANGED_ENTITY), "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").getTime()));
-            aChange.setStoryId((Integer) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.CHANGE_STORY_ID));
+            if ((Integer) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.CHANGE_STORY_ID) != null) {
+                aChange.setStoryId((Integer) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.CHANGE_STORY_ID));
+            } else {
+                continue;
+            }
             JSONArray actions = (JSONArray) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.ACTIONS_ENTITY);
             for (int indez = 0; indez < actions.size(); indez++) {
-                if (getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY) != null) {
-                    if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY) != null) {
-                        aChange.setChangeType(ClubHouseStatics.WORKFLOW_ENTITY);
-                        stateChanges.put(ClubHouseStatics.NEW_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
-                                ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.NEW_ENTITY));
-                        stateChanges.put(ClubHouseStatics.OLD_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
-                                ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.OLD_ENTITY));
-                    } else {
+                String action = (String) getValueFromLinkedHashMap(actions.get(indez), "action");
+                switch (action) {
+                    case "create": {
+                        aChange.setChangeType("creation");
+                        stateChanges.put(ClubHouseStatics.NEW_ENTITY, (Integer) getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.WORKFLOW_ENTITY));
+                        break;
+                    }
+                    case "update": {
+                        if (getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY) != null) {
+                            if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY) != null) {
+                                aChange.setChangeType(ClubHouseStatics.WORKFLOW_ENTITY);
+                                stateChanges.put(ClubHouseStatics.NEW_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
+                                        ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.NEW_ENTITY));
+                                stateChanges.put(ClubHouseStatics.OLD_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
+                                        ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.OLD_ENTITY));
+                                break;
+
+                            }
+                            if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id") != null) {
+                                aChange.setChangeType("iteration");
+                                stateChanges.put(ClubHouseStatics.NEW_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
+                                        ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.NEW_ENTITY));
+                                break;
+                            } else {
+                                jump = true;
+                            }
+                        } else {
+                            jump = true;
+                        }
+                        break;
+                    }
+                    default: {
                         jump = true;
-                    } 
-                } else {
-                    jump = true;
+                        break;
+                    }
+                }
+                if (jump) {
+                    continue;
                 }
             }
             if (jump) {
@@ -140,16 +183,28 @@ public class ClubHouseJSONParser {
             }
             JSONArray references = (JSONArray) getValueFromLinkedHashMap(changes.get(index), ClubHouseStatics.REFERENCES_ENTITY);
             for (int indey = 0; indey < references.size(); indey++) {
-                if (stateChanges.get(ClubHouseStatics.NEW_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
-                    aChange.setNewValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
-                }
-                if (stateChanges.get(ClubHouseStatics.OLD_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
-                    aChange.setOldValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
+                try {
+                    if (stateChanges.get(ClubHouseStatics.NEW_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
+                        aChange.setNewValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
+                    }
+                    if (stateChanges.get(ClubHouseStatics.OLD_ENTITY).equals((Integer) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.ID_ENTITY))) {
+                        aChange.setOldValue((String) getValueFromLinkedHashMap(references.get(indey), ClubHouseStatics.NAME_ENTITY));
+                    }
+                } catch (Exception e) {
+                    LOGGER.warn(" Error getting references");
                 }
             }
+            LOGGER.info(aChange.getCreated().toString()
+                    + ":" + aChange.getStoryId().toString()
+                    + ":" + aChange.getChangeType()
+                    + ":" + aChange.getOldValue()
+                    + ":" + aChange.getNewValue());
+
             returnValue.put(UUID.randomUUID(), aChange);
         }
         return returnValue;
     }
+
+    
 
 }

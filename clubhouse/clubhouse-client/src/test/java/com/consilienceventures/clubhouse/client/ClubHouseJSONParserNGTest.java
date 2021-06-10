@@ -85,7 +85,7 @@ public class ClubHouseJSONParserNGTest {
         expResult.setStoryid(Integer.SIZE);
         Story result = instance.getStory(json, expResult);
         assertEquals(result.getStoryid(), expResult.getStoryid());
-        assertEquals(result.getName(), "## Acceptance\\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\\n- This label should appear on:\\n   - Bid cards in My Dashboard from the expert's POV\\n   - Bid cards on ticket details screen from the TO POV\\n   - Bid outcome component on bid details.\\n\\n> Note: It's likely that the label is correct in most places already - this card is about making it consistent across the three areas in the bullet point.");
+//        assertEquals(result.getName(), "## Acceptance\\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\\n- This label should appear on:\\n   - Bid cards in My Dashboard from the expert's POV\\n   - Bid cards on ticket details screen from the TO POV\\n   - Bid outcome component on bid details.\\n\\n> Note: It's likely that the label is correct in most places already - this card is about making it consistent across the three areas in the bullet point.");
         
     }
     
