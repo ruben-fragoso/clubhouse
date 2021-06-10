@@ -158,9 +158,15 @@ public class ClubHouseJSONParser {
                             }
                             if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id") != null) {
                                 aChange.setChangeType("iteration");
-                                stateChanges.put(ClubHouseStatics.NEW_ENTITY, (Integer) getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez),
-                                        ClubHouseStatics.CHANGES_ENTITY), ClubHouseStatics.WORKFLOW_ENTITY), ClubHouseStatics.NEW_ENTITY));
-                                break;
+                                if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id"), ClubHouseStatics.NEW_ENTITY) != null) {
+                                    aChange.setNewValue(getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id"), ClubHouseStatics.NEW_ENTITY).toString());
+                                    break;
+                                }
+                                if (getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id"), ClubHouseStatics.OLD_ENTITY) != null) {
+                                    aChange.setOldValue(getValueFromLinkedHashMap(getValueFromLinkedHashMap(getValueFromLinkedHashMap(actions.get(indez), ClubHouseStatics.CHANGES_ENTITY), "iteration_id"), ClubHouseStatics.OLD_ENTITY).toString());
+                                    break;
+                                }
+
                             } else {
                                 jump = true;
                             }
@@ -194,7 +200,8 @@ public class ClubHouseJSONParser {
                     LOGGER.warn(" Error getting references");
                 }
             }
-            LOGGER.info(aChange.getCreated().toString()
+
+            LOGGER.info(aChange.getStoryId().toString()
                     + ":" + aChange.getStoryId().toString()
                     + ":" + aChange.getChangeType()
                     + ":" + aChange.getOldValue()
@@ -204,7 +211,5 @@ public class ClubHouseJSONParser {
         }
         return returnValue;
     }
-
-    
 
 }

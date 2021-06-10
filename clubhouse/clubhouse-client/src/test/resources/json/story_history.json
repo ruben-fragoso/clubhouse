@@ -1,24 +1,24 @@
 [
     {
-        "id": "6081a771-c32a-4128-92d8-74094bca8534",
-        "changed_at": "2021-04-22T16:42:25.941Z",
+        "id": "60250fbd-411b-428b-80c8-b432355d0374",
+        "changed_at": "2021-02-11T11:06:37.594Z",
         "version": "v1",
-        "primary_id": 1855,
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "create",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Milestone Date",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "description": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit milestone dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to edit the date of any milestone. \n   - If I do,  I must select from a list of options a response to the question “Why are you requesting a milestone date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
                 "workflow_state_id": 500000008,
-                "description": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details",
+                "requested_by_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
                 "follower_ids": [
                     "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
                 ],
-                "requested_by_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
                 "project_id": 15
             }
         ],
@@ -38,73 +38,56 @@
         ]
     },
     {
-        "id": "6081b0b5-6c00-48a8-ac8b-fd154983104d",
-        "changed_at": "2021-04-22T17:21:57.794Z",
+        "id": "60250fc3-1052-4a68-88e9-073e7733800a",
+        "changed_at": "2021-02-11T11:06:43.532Z",
         "version": "v1",
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Milestone Date",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "label_ids": {
-                        "adds": [
-                            1864
-                        ]
+                    "project_id": {
+                        "new": 932,
+                        "old": 15
                     }
                 }
             }
         ],
         "references": [
             {
-                "id": 1864,
-                "entity_type": "label",
-                "name": "Release 2",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1864"
-            }
-        ]
-    },
-    {
-        "id": "608bf82b-fdeb-48d7-916d-22e186f63019",
-        "changed_at": "2021-04-30T12:29:31.831Z",
-        "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31ec74-ec3a-4f48-88e1-cbe027e0110c",
-        "actions": [
+                "id": 932,
+                "entity_type": "project",
+                "name": "UI / UX",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/project/932"
+            },
             {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "description": {
-                        "new": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details.\n\n> Note: It's likely that the label is correct in most places already - this card is about making it consistent across the three areas in the bullet point.",
-                        "old": "## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4318%3A390)\n- Once the handshake between the selected bidder and TO is complete, the state icon on bid cards should read: Confirmed\n- This label should appear on:\n   - Bid cards in My Dashboard from the expert's POV\n   - Bid cards on ticket details screen from the TO POV\n   - Bid outcome component on bid details"
-                    }
-                }
+                "id": 15,
+                "entity_type": "project",
+                "name": "Frontend",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/project/15"
             }
         ]
     },
     {
-        "id": "609106b2-5421-4cee-b436-d2c2663a9c34",
-        "changed_at": "2021-05-04T08:32:50.637Z",
+        "id": "603f5e19-6288-4d30-bb32-7c24c2b6be01",
+        "changed_at": "2021-03-03T09:59:53.436Z",
         "version": "v1",
-        "primary_id": 1855,
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Milestone Date",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "workflow_state_id": {
                         "new": 500000007,
@@ -129,19 +112,65 @@
         ]
     },
     {
-        "id": "60925fdc-3504-4d10-be8a-a46ea6d85d46",
-        "changed_at": "2021-05-05T09:05:32.075Z",
+        "id": "60423729-e024-4058-a829-6d758e9a599d",
+        "changed_at": "2021-03-05T13:50:33.787Z",
         "version": "v1",
-        "primary_id": 1855,
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverable Date",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "name": {
+                        "new": "E2 Edit Deliverable Date",
+                        "old": "E2 Edit Milestone Date"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60423740-60fa-4b98-9c9a-aa07a0bb3f11",
+        "changed_at": "2021-03-05T13:50:56.616Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverable Date",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to edit the date of any deliverable. \n   - If I do,  I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit milestone dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to edit the date of any milestone. \n   - If I do,  I must select from a list of options a response to the question “Why are you requesting a milestone date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6042376e-7686-4ee5-abbc-fd0f88ee5e29",
+        "changed_at": "2021-03-05T13:51:42.985Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverable Date",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "workflow_state_id": {
                         "new": 500000008,
@@ -166,50 +195,19 @@
         ]
     },
     {
-        "id": "60953426-bb0a-4462-9c07-2207945e05d0",
-        "changed_at": "2021-05-07T12:35:50.515Z",
+        "id": "604b8dce-5581-40c3-8875-abdc907fbdba",
+        "changed_at": "2021-03-12T15:50:38.081Z",
         "version": "v1",
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverable Date",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "label_ids": {
-                        "adds": [
-                            2198
-                        ]
-                    }
-                }
-            }
-        ],
-        "references": [
-            {
-                "id": 2198,
-                "entity_type": "label",
-                "name": "groomed",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/label/2198"
-            }
-        ]
-    },
-    {
-        "id": "609a493d-3288-44a3-acec-d01e68af7d12",
-        "changed_at": "2021-05-11T09:07:09.720Z",
-        "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "workflow_state_id": {
                         "new": 500000007,
@@ -234,154 +232,123 @@
         ]
     },
     {
-        "id": "609e8710-f043-4ef5-9eff-4ad4582cbe03",
-        "changed_at": "2021-05-14T14:20:01.090Z",
+        "id": "604b8df9-6d56-4d22-97ed-d54201a526d7",
+        "changed_at": "2021-03-12T15:51:21.925Z",
         "version": "v1",
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Deliverables Timeline",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "iteration_id": {
-                        "new": 2279
-                    }
-                }
-            }
-        ],
-        "references": [
-            {
-                "id": 2279,
-                "entity_type": "iteration",
-                "name": "Iteration 1",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
-            }
-        ]
-    },
-    {
-        "id": "60a3c749-e10e-48d4-8286-c055cbd8e31d",
-        "changed_at": "2021-05-18T13:55:21.399Z",
-        "version": "v1",
-        "primary_id": 500001779,
-        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
-        "actions": [
-            {
-                "id": 500001779,
-                "entity_type": "story-link",
-                "action": "create",
-                "subject_id": 1855,
-                "verb": "relates to",
-                "object_id": 1856
-            },
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "subject_story_link_ids": {
-                        "adds": [
-                            500001779
-                        ]
-                    }
-                }
-            }
-        ],
-        "references": [
-            {
-                "id": 1856,
-                "entity_type": "story",
-                "name": "Confirmed Bid State",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1856"
-            }
-        ]
-    },
-    {
-        "id": "60a3c7ac-2888-47bd-b811-e57e7b8c1fcc",
-        "changed_at": "2021-05-18T13:57:00.102Z",
-        "version": "v1",
-        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "subject_story_link_ids": {
-                        "removes": [
-                            500001779
-                        ]
-                    }
-                }
-            },
-            {
-                "id": 500001779,
-                "entity_type": "story-link",
-                "action": "delete",
-                "verb": "relates to",
-                "subject_id": 1855,
-                "object_id": 1856
-            }
-        ]
-    },
-    {
-        "id": "60a3c7f6-b016-4396-bf45-51941f914ab9",
-        "changed_at": "2021-05-18T13:58:14.879Z",
-        "version": "v1",
-        "primary_id": 1855,
-        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "estimate": {
-                        "new": 1
+                    "name": {
+                        "new": "E2 Deliverables Timeline",
+                        "old": "E2 Edit Deliverable Date"
                     }
                 }
             }
         ]
     },
     {
-        "id": "60a405be-a2b4-4893-a173-7083045ee2ff",
-        "changed_at": "2021-05-18T18:21:50.721Z",
+        "id": "604b8e3f-0578-496b-9b7f-a82a78fad41b",
+        "changed_at": "2021-03-12T15:52:31.646Z",
         "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Deliverables Timeline",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "started": {
-                        "new": true,
-                        "old": false
-                    },
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to view a timeline of deliverables, and edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to edit the date of any deliverable. \n   - If I do,  I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6058b3ed-9a84-4e4c-af47-ad489f990b46",
+        "changed_at": "2021-03-22T15:12:45.701Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edt Deliverables Timeline",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "name": {
+                        "new": "E2 Edt Deliverables Timeline",
+                        "old": "E2 Deliverables Timeline"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6058b3f1-32a0-4ac5-983c-e145dd381876",
+        "changed_at": "2021-03-22T15:12:49.253Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Timeline",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "name": {
+                        "new": "E2 Edit Deliverables Timeline",
+                        "old": "E2 Edt Deliverables Timeline"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6058c07f-a514-4cf4-b828-198055c64876",
+        "changed_at": "2021-03-22T16:06:23.465Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Timeline",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
                     "workflow_state_id": {
                         "new": 500000006,
                         "old": 500000007
                     },
+                    "started": {
+                        "new": true,
+                        "old": false
+                    },
                     "owner_ids": {
                         "adds": [
-                            "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
+                            "5fc910d2-8f1d-489b-b43e-166da906c2b9"
                         ]
                     }
                 }
@@ -403,65 +370,37 @@
         ]
     },
     {
-        "id": "60a40c1e-1d3b-4a67-8b14-7df751859fca",
-        "changed_at": "2021-05-18T18:49:02.714Z",
+        "id": "6058c08b-558f-4bb8-973d-5081f2ada1c9",
+        "changed_at": "2021-03-22T16:06:35.590Z",
         "version": "v1",
-        "primary_id": 2534,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 2534,
-                "entity_type": "story-comment",
-                "action": "create",
-                "text": "[@diannachen](clubhouse://members/5e4fc91e-b963-4f9d-93db-5097fcb5b7a2) the previous label on this place `Bid cards in My Dashboard from the expert's POV` had a popup when you hovered it. What should go in there now? (screenshot below with the new spec for the label plus the old popup message)\n\n![Clipboard 2021-18-05 at 7.46.54 PM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60a40b9f-0896-4b2d-9d02-ae7ee75b0cf3/Clipboard%202021-18-05%20at%207.46.54%20PM.png)",
-                "author_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855/confirmed-bid-state-label#activity-2534"
-            },
-            {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Timeline",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "follower_ids": {
-                        "adds": [
-                            "5e31faf7-7d79-4a50-a3d1-56bcc4da467c"
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "id": "60a41cbe-885d-4f35-935e-ed6cecac91c6",
-        "changed_at": "2021-05-18T19:59:58.808Z",
-        "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "workflow_state_id": {
-                        "new": 500001485,
+                        "new": 500000007,
                         "old": 500000006
+                    },
+                    "started": {
+                        "new": false,
+                        "old": true
                     }
                 }
             }
         ],
         "references": [
             {
-                "id": 500001485,
+                "id": 500000007,
                 "entity_type": "workflow-state",
-                "name": "In Technical Review",
-                "type": "started"
+                "name": "Ready for Work",
+                "type": "unstarted"
             },
             {
                 "id": 500000006,
@@ -472,113 +411,269 @@
         ]
     },
     {
-        "id": "60a41cdb-cf7b-4106-bbad-57b41df72237",
-        "changed_at": "2021-05-18T20:00:27.822Z",
+        "id": "6059c03b-331e-4815-8841-f2fca30beca5",
+        "changed_at": "2021-03-23T10:17:31.124Z",
         "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "estimate": {
-                        "new": 3,
-                        "old": 1
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "id": "60a62249-9290-4326-9dc1-857fc1319f6d",
-        "changed_at": "2021-05-20T08:48:09.120Z",
-        "version": "v1",
-        "primary_id": 2539,
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 2539,
-                "entity_type": "story",
-                "action": "create",
-                "name": "Confirmed Bid State Tooltip",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2539"
-            },
-            {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Timeline",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "object_story_link_ids": {
-                        "adds": [
-                            500001781
-                        ]
+                    "workflow_state_id": {
+                        "new": 500000006,
+                        "old": 500000007
+                    },
+                    "started": {
+                        "new": true,
+                        "old": false
                     }
                 }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
             },
             {
-                "id": 500001781,
-                "entity_type": "story-link",
-                "action": "create",
-                "subject_id": 2539,
-                "verb": "relates to",
-                "object_id": 1855
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
             }
         ]
     },
     {
-        "id": "60a675c0-ee1d-4d74-9fdb-e2023653330c",
-        "changed_at": "2021-05-20T14:44:16.841Z",
+        "id": "6059d6f3-4d9e-426c-a10c-6e422298a6a0",
+        "changed_at": "2021-03-23T11:54:27.691Z",
         "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Timeline",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "iteration_id": {
+                        "new": 1499
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1499,
+                "entity_type": "iteration",
+                "name": "Plymouth",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/1499"
+            }
+        ]
+    },
+    {
+        "id": "6070604b-bbaa-46f6-935f-0eedcb25a86c",
+        "changed_at": "2021-04-09T14:10:19.598Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "name": {
+                        "new": "E2 Edit Deliverables Details",
+                        "old": "E2 Edit Deliverables Timeline"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60706066-ce5e-47b4-9e58-ef07c1f13b52",
+        "changed_at": "2021-04-09T14:10:46.326Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- I should be able to edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable dates, \nIn order to keep my delivery timeline up to date. \n\n## Acceptance\n- I should be able to view a timeline of deliverables, and edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6075bc07-c376-4445-b266-cf1d4d5d0faf",
+        "changed_at": "2021-04-13T15:43:03.073Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "estimate": {
-                        "new": 1,
-                        "old": 3
+                        "new": 3
                     }
                 }
             }
         ]
     },
     {
-        "id": "60a6b66f-bd44-40d2-b397-22a57f4b730a",
-        "changed_at": "2021-05-20T19:20:15.117Z",
+        "id": "6075bc4c-547d-49d3-a553-62c39c591989",
+        "changed_at": "2021-04-13T15:44:12.744Z",
         "version": "v1",
-        "primary_id": 1855,
-        "member_id": "5e31faf7-7d79-4a50-a3d1-56bcc4da467c",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Details",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- I should be able to edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- Should be able to edit all info except for payment info, but still be able to view payment info. \n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- I should be able to edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "607e9710-2dce-4b34-972e-5a5a54b0c3f5",
+        "changed_at": "2021-04-20T08:55:44.434Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000011,
+                        "old": 500000006
+                    },
                     "completed": {
                         "new": true,
                         "old": false
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000011,
+                "entity_type": "workflow-state",
+                "name": "Completed",
+                "type": "done"
+            },
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
+            }
+        ]
+    },
+    {
+        "id": "6082c7d0-541f-44d7-b98d-b06385cff249",
+        "changed_at": "2021-04-23T13:12:48.275Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000010,
+                        "old": 500000011
                     },
+                    "completed": {
+                        "new": false,
+                        "old": true
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000010,
+                "entity_type": "workflow-state",
+                "name": "Ready for Product Review",
+                "type": "started"
+            },
+            {
+                "id": 500000011,
+                "entity_type": "workflow-state",
+                "name": "Completed",
+                "type": "done"
+            }
+        ]
+    },
+    {
+        "id": "60891562-1a32-4ea2-b60b-d2b8ad6cf873",
+        "changed_at": "2021-04-28T07:57:22.346Z",
+        "version": "v1",
+        "member_id": "5e31ec74-ec3a-4f48-88e1-cbe027e0110c",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
                     "workflow_state_id": {
                         "new": 500001592,
-                        "old": 500001485
+                        "old": 500000010
+                    },
+                    "completed": {
+                        "new": true,
+                        "old": false
                     }
                 }
             }
@@ -591,173 +686,373 @@
                 "type": "done"
             },
             {
-                "id": 500001485,
+                "id": 500000010,
                 "entity_type": "workflow-state",
-                "name": "In Technical Review",
+                "name": "Please do not use.",
                 "type": "started"
             }
         ]
     },
     {
-        "id": "60afc642-2c44-4ad3-983c-9322fe38c675",
-        "changed_at": "2021-05-27T16:18:10.953Z",
+        "id": "60893231-248f-41d1-b06c-654e7c3550e9",
+        "changed_at": "2021-04-28T10:00:17.497Z",
         "version": "v1",
-        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Details",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "object_story_link_ids": {
-                        "removes": [
-                            500001781
-                        ]
+                    "completed": {
+                        "new": false,
+                        "old": true
+                    },
+                    "workflow_state_id": {
+                        "new": 500000008,
+                        "old": 500001592
+                    },
+                    "started": {
+                        "new": false,
+                        "old": true
                     }
                 }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
             },
             {
-                "id": 500001781,
-                "entity_type": "story-link",
-                "action": "delete",
-                "verb": "relates to",
-                "subject_id": null,
-                "object_id": 1855
+                "id": 500001592,
+                "entity_type": "workflow-state",
+                "name": "Ready for Product Review",
+                "type": "done"
             }
         ]
     },
     {
-        "id": "60b11bea-654f-4234-8e18-c3bbd993949d",
-        "changed_at": "2021-05-28T16:35:54.262Z",
+        "id": "6089398f-9701-4aee-bff0-794c866045ab",
+        "changed_at": "2021-04-28T10:31:43.593Z",
         "version": "v1",
+        "primary_id": 1309,
         "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Details",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
-                    "label_ids": {
-                        "removes": [
-                            1864
-                        ]
+                    "started": {
+                        "new": true,
+                        "old": false
+                    },
+                    "workflow_state_id": {
+                        "new": 500000011,
+                        "old": 500000008
+                    },
+                    "completed": {
+                        "new": true,
+                        "old": false
                     }
                 }
             }
         ],
         "references": [
             {
-                "id": 1864,
-                "entity_type": "label",
-                "name": "Release 2",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1864"
-            }
-        ]
-    },
-    {
-        "id": "60b5e739-5a59-452a-8c32-d6f64ae531ae",
-        "changed_at": "2021-06-01T07:52:25.565Z",
-        "version": "v1",
-        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "epic_id": {
-                        "new": 646
-                    }
-                }
-            }
-        ],
-        "references": [
-            {
-                "id": 646,
-                "entity_type": "epic",
-                "name": "Member - My Dashboard",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/646"
-            }
-        ]
-    },
-    {
-        "id": "60b5e7d7-2fef-4701-b950-c0c80f118ba4",
-        "changed_at": "2021-06-01T07:55:03.058Z",
-        "version": "v1",
-        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
-        "actions": [
-            {
-                "id": 1855,
-                "entity_type": "story",
-                "action": "update",
-                "name": "Confirmed Bid State Label",
-                "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
-                "changes": {
-                    "epic_id": {
-                        "new": 464,
-                        "old": 646
-                    }
-                }
-            }
-        ],
-        "references": [
-            {
-                "id": 464,
-                "entity_type": "epic",
-                "name": "Manage ticket lifecycle",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/464"
+                "id": 500000011,
+                "entity_type": "workflow-state",
+                "name": "Completed",
+                "type": "done"
             },
             {
-                "id": 646,
-                "entity_type": "epic",
-                "name": "Member - My Dashboard",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/646"
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
             }
         ]
     },
     {
-        "id": "60bf44e5-286d-4989-a2f6-e83765cf9b58",
-        "changed_at": "2021-06-08T10:22:29.891Z",
+        "id": "60893b46-b169-45fa-83a7-e98f2ce47026",
+        "changed_at": "2021-04-28T10:39:02.788Z",
         "version": "v1",
-        "member_id": "60893c36-4f60-4310-9ad3-1e766f93719e",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
         "actions": [
             {
-                "id": 1855,
+                "id": 1309,
                 "entity_type": "story",
                 "action": "update",
-                "name": "Confirmed Bid State Label",
+                "name": "E2 Edit Deliverables Details",
                 "story_type": "feature",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1855",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000007,
+                        "old": 500000011
+                    },
+                    "started": {
+                        "new": false,
+                        "old": true
+                    },
+                    "completed": {
+                        "new": false,
+                        "old": true
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            },
+            {
+                "id": 500000011,
+                "entity_type": "workflow-state",
+                "name": "Completed",
+                "type": "done"
+            }
+        ]
+    },
+    {
+        "id": "60915a7a-1f83-4e03-b561-48f79186297b",
+        "changed_at": "2021-05-04T14:30:18.927Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
                 "changes": {
                     "iteration_id": {
-                        "new": 2567,
-                        "old": 2279
+                        "old": 1499
                     }
                 }
             }
         ],
         "references": [
             {
-                "id": 2567,
+                "id": 1499,
                 "entity_type": "iteration",
-                "name": "Iteration 2",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+                "name": "Plymouth",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/1499"
+            }
+        ]
+    },
+    {
+        "id": "60916137-455e-4be3-a834-598829f6d8e1",
+        "changed_at": "2021-05-04T14:59:03.770Z",
+        "version": "v1",
+        "primary_id": 2089,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 2089,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671",
+                "author_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309/e2-edit-deliverables-details#activity-2089"
             },
             {
-                "id": 2279,
-                "entity_type": "iteration",
-                "name": "Iteration 1",
-                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "5fc910d2-8f1d-489b-b43e-166da906c2b9"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "6091613d-758b-4e1c-b461-9d2ffdeb5f43",
+        "changed_at": "2021-05-04T14:59:09.097Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "started": {
+                        "new": true,
+                        "old": false
+                    },
+                    "workflow_state_id": {
+                        "new": 500000006,
+                        "old": 500000007
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
+            },
+            {
+                "id": 500000007,
+                "entity_type": "workflow-state",
+                "name": "Ready for Work",
+                "type": "unstarted"
+            }
+        ]
+    },
+    {
+        "id": "609163d4-cf89-40c7-8be4-830d0a44e945",
+        "changed_at": "2021-05-04T15:10:12.771Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "follower_ids": {
+                        "removes": [
+                            "5fc910d2-8f1d-489b-b43e-166da906c2b9"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "609163da-0521-44f1-bded-c33e4e88fefe",
+        "changed_at": "2021-05-04T15:10:18.205Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- I should be able to edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- Should be able to edit all info except for payment info, but still be able to view payment info. \n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)\n\nFigma: https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4527%3A2",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- I should be able to edit information for any specific deliverable. \n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- Should be able to edit all info except for payment info, but still be able to view payment info. \n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "609163e1-707b-4810-b71d-63c8bef9a177",
+        "changed_at": "2021-05-04T15:10:25.405Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500001592,
+                        "old": 500000006
+                    },
+                    "completed": {
+                        "new": true,
+                        "old": false
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500001592,
+                "entity_type": "workflow-state",
+                "name": "Ready for Product Review",
+                "type": "done"
+            },
+            {
+                "id": 500000006,
+                "entity_type": "workflow-state",
+                "name": "In Progress",
+                "type": "started"
+            }
+        ]
+    },
+    {
+        "id": "609e551d-4eee-4c08-b84c-f248e5518b69",
+        "changed_at": "2021-05-14T10:46:53.745Z",
+        "version": "v1",
+        "primary_id": 1309,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1309,
+                "entity_type": "story",
+                "action": "update",
+                "name": "E2 Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1309",
+                "changes": {
+                    "workflow_state_id": {
+                        "new": 500000011,
+                        "old": 500001592
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 500000011,
+                "entity_type": "workflow-state",
+                "name": "Completed",
+                "type": "done"
+            },
+            {
+                "id": 500001592,
+                "entity_type": "workflow-state",
+                "name": "Ready for Product Review",
+                "type": "done"
             }
         ]
     }
