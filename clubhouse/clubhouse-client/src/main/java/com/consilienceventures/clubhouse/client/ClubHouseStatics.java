@@ -43,6 +43,7 @@ public interface ClubHouseStatics {
     public static final String REFERENCES_ENTITY = "references";
     public static final String TIME_STAMP = "yyyy-MM-dd'T'HH:mm:ss'Z'";
     public static final String CHANGE_STORY_ID = "primary_id";
+    public static final String SPRING_STATUS = "status";
    
     
 }

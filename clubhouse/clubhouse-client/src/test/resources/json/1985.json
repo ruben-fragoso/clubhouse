@@ -1,0 +1,828 @@
+[
+    {
+        "id": "60893a6a-4281-4d6f-8cf8-76ad9c9c078a",
+        "changed_at": "2021-04-28T10:35:23.038Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "create",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "description": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n\n\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A219)\n\n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- Should be able to edit all info except for payment info, but still be able to view payment info. \n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)",
+                "story_type": "feature",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "requested_by_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+                "iteration_id": 1499,
+                "label_ids": [
+                    1971
+                ],
+                "workflow_state_id": 500000008,
+                "follower_ids": [
+                    "5fc910d2-8f1d-489b-b43e-166da906c2b9",
+                    "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2"
+                ],
+                "owner_ids": [
+                    "5fc910d2-8f1d-489b-b43e-166da906c2b9"
+                ],
+                "estimate": 3,
+                "project_id": 15
+            }
+        ],
+        "references": [
+            {
+                "id": 1499,
+                "entity_type": "iteration",
+                "name": "Plymouth",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/1499"
+            },
+            {
+                "id": 15,
+                "entity_type": "project",
+                "name": "Frontend",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/project/15"
+            },
+            {
+                "id": 500000008,
+                "entity_type": "workflow-state",
+                "name": "Unscheduled",
+                "type": "unstarted"
+            },
+            {
+                "id": 1971,
+                "entity_type": "label",
+                "name": "Release 3",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1971"
+            }
+        ]
+    },
+    {
+        "id": "60893a94-2207-4aa2-9ebc-2c783bb50cff",
+        "changed_at": "2021-04-28T10:36:04.654Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n\n\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A219)\n\n   - If I edit the date of a deliverable, I must select from a list of options a response to the question “Why are you requesting a deliverable date change?”\n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- Should be able to edit all info except for payment info, but still be able to view payment info. \n\n![Clipboard 2021-11-02 at 11.02.08 AM.png](https://media.clubhouse.io/api/attachments/files/clubhouse-assets/5e31ec73-2c26-4421-a171-033253ee5cfb/60250eb1-23d7-4205-9521-9108996df1ef/Clipboard%202021-11-02%20at%2011.02.08%20AM.png)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60893af2-368c-4096-b3f1-fc54fd8f89d0",
+        "changed_at": "2021-04-28T10:37:38.811Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "old": 1499
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1499,
+                "entity_type": "iteration",
+                "name": "Plymouth",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/1499"
+            }
+        ]
+    },
+    {
+        "id": "60893d92-c3be-40e8-8ce8-5c3de13bf4c6",
+        "changed_at": "2021-04-28T10:48:50.954Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "owner_ids": {
+                        "removes": [
+                            "5fc910d2-8f1d-489b-b43e-166da906c2b9"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "609e5508-5aa4-4fbf-997d-15ff274ec12e",
+        "changed_at": "2021-05-14T10:46:32.393Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options:\n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "609e554a-3c54-487d-8bcb-257b62b2e2a3",
+        "changed_at": "2021-05-14T10:47:38.106Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options:\n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ab8e24-8946-4939-966d-63ddc43a631e",
+        "changed_at": "2021-05-24T11:29:40.951Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2279
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2279,
+                "entity_type": "iteration",
+                "name": "Iteration 1",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+            }
+        ]
+    },
+    {
+        "id": "60ab9abc-5b26-44c6-b732-8a3eb1043cc1",
+        "changed_at": "2021-05-24T12:23:24.227Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should be able to cancel or save changes. In either case, I should see a confirmation message.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to view and edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should be able to cancel or save changes. In either case, I should see a flash confirmation message."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ab9cdb-b987-4898-b855-d214bfbccbb1",
+        "changed_at": "2021-05-24T12:32:27.797Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2567,
+                        "old": 2279
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            },
+            {
+                "id": 2279,
+                "entity_type": "iteration",
+                "name": "Iteration 1",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2279"
+            }
+        ]
+    },
+    {
+        "id": "60aba418-0a7c-458c-9490-3fc539d45fe9",
+        "changed_at": "2021-05-24T13:03:20.097Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "old": 2567
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            }
+        ]
+    },
+    {
+        "id": "60abe3bb-0ed9-44e3-8259-740fe6d67559",
+        "changed_at": "2021-05-24T17:34:51.847Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change, I should be prompted to provide a digital signature.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should be able to cancel or save changes. In either case, I should see a confirmation message."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60acec0c-f8f9-49d4-be71-036c67ea0041",
+        "changed_at": "2021-05-25T12:22:36.742Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change, I should be prompted to provide a digital signature.\n- If I click Request change, I should see a confirmation alert: You have requested a change to the details of DELIVERABLE.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change, I should be prompted to provide a digital signature."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60acecee-c7f1-4738-998c-c99fd84b16a6",
+        "changed_at": "2021-05-25T12:26:22.664Z",
+        "version": "v1",
+        "primary_id": 2615,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2615,
+                "entity_type": "story",
+                "action": "create",
+                "name": "TO - Implement sending of Deliverable Change Request",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2615"
+            },
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "object_story_link_ids": {
+                        "adds": [
+                            500001790
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001790,
+                "entity_type": "story-link",
+                "action": "create",
+                "subject_id": 2615,
+                "verb": "relates to",
+                "object_id": 1985
+            }
+        ]
+    },
+    {
+        "id": "60acf14c-ed42-400b-83bc-15e316025817",
+        "changed_at": "2021-05-25T12:45:00.710Z",
+        "version": "v1",
+        "primary_id": 2617,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2617,
+                "entity_type": "story",
+                "action": "create",
+                "name": "TO - Implement sending of Deliverable Change Alert",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2617"
+            },
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "object_story_link_ids": {
+                        "adds": [
+                            500001791
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001791,
+                "entity_type": "story-link",
+                "action": "create",
+                "subject_id": 2617,
+                "verb": "relates to",
+                "object_id": 1985
+            }
+        ]
+    },
+    {
+        "id": "60ad29a3-6de2-4b33-bb99-dc3cb3ee216b",
+        "changed_at": "2021-05-25T16:45:23.407Z",
+        "version": "v1",
+        "primary_id": 2624,
+        "member_id": "5e736f9b-2480-43cd-bdbc-11d2dec320e6",
+        "actions": [
+            {
+                "id": 2624,
+                "entity_type": "story-comment",
+                "action": "create",
+                "text": "Looks good, the only thing that occurs to me is that the expert should not be able to edit a deliverables which has already been marked complete",
+                "author_id": "5e736f9b-2480-43cd-bdbc-11d2dec320e6",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985/change-expert-edit-deliverables-details#activity-2624"
+            },
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "follower_ids": {
+                        "adds": [
+                            "5e736f9b-2480-43cd-bdbc-11d2dec320e6"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ae1579-df00-4083-bdd4-ecac76448937",
+        "changed_at": "2021-05-26T09:31:37.056Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change I should be prompted to provide a digital signature.\n   - Once I provide my signature, I should see a confirmation alert: You have requested a change to the details of DELIVERABLE.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change, I should be prompted to provide a digital signature.\n- If I click Request change, I should see a confirmation alert: You have requested a change to the details of DELIVERABLE."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ae15b2-d48e-48c0-a3e7-94da8080bb58",
+        "changed_at": "2021-05-26T09:32:34.655Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "Change - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change I should be prompted to provide a digital signature.\n   - Once I provide my signature, I should see a confirmation alert: TICKET OWNER has been notified of your request for changes to DELIVERABLE.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change I should be prompted to provide a digital signature.\n   - Once I provide my signature, I should see a confirmation alert: You have requested a change to the details of DELIVERABLE."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ae3e21-14fd-4052-a472-1089ccc389ee",
+        "changed_at": "2021-05-26T12:25:06.005Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "name": {
+                        "new": "[Frontend] - Expert, Edit Deliverables Details",
+                        "old": "Change - Expert, Edit Deliverables Details"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60ae3f05-f28a-4e1a-97dc-13175f801e3d",
+        "changed_at": "2021-05-26T12:28:53.914Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2567
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            }
+        ]
+    },
+    {
+        "id": "60af858d-679f-4493-9abb-35d96f5d23d5",
+        "changed_at": "2021-05-27T11:42:05.181Z",
+        "version": "v1",
+        "primary_id": 1985,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "description": {
+                        "new": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Cancel and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change I should be prompted to provide a digital signature.\n   - Once I provide my signature, I should see a confirmation alert: TICKET OWNER has been notified of your request for changes to DELIVERABLE.",
+                        "old": "## Story\nAs an expert managing my ticket dashboard, \nI should be able to edit deliverable details, \nIn order to keep my delivery info up to date. \n\n## Acceptance\n- [Figma](https://www.figma.com/file/aBbk2LcaJDpmqlWWfW1bfo/Consilience-Ventures-UX-UI-%F0%9F%9B%A0?node-id=4078%3A671)\n- I should see an additional line of text (not depicted in the mock) at the top of the component between the grey line and first field: Request a change in any of the deliverables details from TICKET OWNER. \n- I should be able to edit information for any specific deliverable by clicking the edit button in the Deliverable Details. \n- If I edit the date of the deliverable, a question should appear: Why are you requesting a date change?  \n    - Selectable options: \n       - Increased or changed scope/requirements (please describe)\n       - Lack of resource (staff absence/illness)\n       - Unforeseen execution issues (please describe)\n       - Incomplete understanding of scope/requirements\n       - Other (freeform max 100 chars)\n- I should see buttons labeled Save and Request change. \n  - The Request change button should have the digital signature icon. \n   - If I click on Request change I should be prompted to provide a digital signature.\n   - Once I provide my signature, I should see a confirmation alert: TICKET OWNER has been notified of your request for changes to DELIVERABLE."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "60af85cc-4c39-42c1-a093-4e9940cb60f3",
+        "changed_at": "2021-05-27T11:43:08.246Z",
+        "version": "v1",
+        "primary_id": 2668,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 2668,
+                "entity_type": "story",
+                "action": "create",
+                "name": "[Backend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2668"
+            },
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "blocked": {
+                        "new": true,
+                        "old": false
+                    },
+                    "object_story_link_ids": {
+                        "adds": [
+                            500001809
+                        ]
+                    }
+                }
+            },
+            {
+                "id": 500001809,
+                "entity_type": "story-link",
+                "action": "create",
+                "subject_id": 2668,
+                "verb": "blocks",
+                "object_id": 1985
+            }
+        ]
+    },
+    {
+        "id": "60af85ec-8d65-4886-ab9c-04fc00f75ef0",
+        "changed_at": "2021-05-27T11:43:40.144Z",
+        "version": "v1",
+        "primary_id": 500001791,
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 500001791,
+                "entity_type": "story-link",
+                "action": "delete",
+                "verb": "relates to",
+                "subject_id": 2617,
+                "object_id": 1985
+            },
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "object_story_link_ids": {
+                        "removes": [
+                            500001791
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2617,
+                "entity_type": "story",
+                "name": "TO - Implement sending of Deliverable Change Alert",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/2617"
+            }
+        ]
+    },
+    {
+        "id": "60b11be7-6aaa-4f46-bd00-c3bbd993949d",
+        "changed_at": "2021-05-28T16:35:52.063Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "label_ids": {
+                        "removes": [
+                            1971
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 1971,
+                "entity_type": "label",
+                "name": "Release 3",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/1971"
+            }
+        ]
+    },
+    {
+        "id": "60b5e918-86f9-4d8a-8061-3fc564bbae28",
+        "changed_at": "2021-06-01T08:00:24.425Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "epic_id": {
+                        "new": 464
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 464,
+                "entity_type": "epic",
+                "name": "Manage ticket lifecycle",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/epic/464"
+            }
+        ]
+    },
+    {
+        "id": "60b9ea28-464c-45e9-beb0-8d1eb8af5500",
+        "changed_at": "2021-06-04T08:54:00.511Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "label_ids": {
+                        "adds": [
+                            2792
+                        ]
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2792,
+                "entity_type": "label",
+                "name": "Planning+Inprogress",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/label/2792"
+            }
+        ]
+    },
+    {
+        "id": "60ba33ba-3935-4e60-bcb0-542a64a227b7",
+        "changed_at": "2021-06-04T14:07:54.887Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2790,
+                        "old": 2567
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2790,
+                "entity_type": "iteration",
+                "name": "Iteration 3",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2790"
+            },
+            {
+                "id": 2567,
+                "entity_type": "iteration",
+                "name": "Iteration 2",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2567"
+            }
+        ]
+    },
+    {
+        "id": "60c1fe1c-4348-4346-9387-3e9c6b722ad0",
+        "changed_at": "2021-06-10T11:57:16.410Z",
+        "version": "v1",
+        "member_id": "5e4fc91e-b963-4f9d-93db-5097fcb5b7a2",
+        "actions": [
+            {
+                "id": 1985,
+                "entity_type": "story",
+                "action": "update",
+                "name": "[Frontend] - Expert, Edit Deliverables Details",
+                "story_type": "feature",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/story/1985",
+                "changes": {
+                    "iteration_id": {
+                        "new": 2887,
+                        "old": 2790
+                    }
+                }
+            }
+        ],
+        "references": [
+            {
+                "id": 2887,
+                "entity_type": "iteration",
+                "name": "Sprint 4",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2887"
+            },
+            {
+                "id": 2790,
+                "entity_type": "iteration",
+                "name": "Sprint 3",
+                "app_url": "https://app.clubhouse.io/consilience-ventures/iteration/2790"
+            }
+        ]
+    }
+]

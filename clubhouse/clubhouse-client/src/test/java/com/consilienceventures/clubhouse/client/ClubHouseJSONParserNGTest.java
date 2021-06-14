@@ -99,5 +99,15 @@ public class ClubHouseJSONParserNGTest {
         LOGGER.info("OK");
         
     }
+    @Test
+    public void testGetChanges1985() throws Exception {
+        ClubHouseJSONParser clubhouseJSONParser = new ClubHouseJSONParser();
+        byte[] lines = Files.readAllBytes((Paths.get("src/test/resources/json/1985.json")));
+        ClubHouseJSONParser instance = new ClubHouseJSONParser();
+        String json = new String(lines, StandardCharsets.UTF_8);
+        HashMap<UUID,Change> result = instance.getChanges(json);
+        LOGGER.info("OK");
+        
+    }
 
 }

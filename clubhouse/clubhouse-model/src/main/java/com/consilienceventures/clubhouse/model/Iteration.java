@@ -39,6 +39,18 @@ public class Iteration {
     private Timestamp startDate;
     @Column(name = "endDate")
     private Timestamp endDate;
+    @Column (name = "status")
+    private String status;
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+    
+    
 
     public Timestamp getEnd() {
         return endDate;
